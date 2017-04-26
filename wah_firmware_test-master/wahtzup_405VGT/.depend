@@ -205,7 +205,8 @@ Src/main.o: Src/main.c Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h Inc/adc.h Inc/dac.h \
  Inc/dma.h Inc/i2s.h Inc/spi.h Inc/gpio.h Inc/system_defs.h Inc/wm8731.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
- Inc/hardFaultHandler.h Inc/tremolo_one.h Inc/biquad.h
+ Inc/hardFaultHandler.h Inc/tremolo_one.h Inc/biquad.h \
+ Inc/user_controls.h Inc/stm32f4xx_hal_conf.h
 Src/spi.o: Src/spi.c Inc/spi.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  Inc/stm32f4xx_hal_conf.h Inc/mxconstants.h \
@@ -324,7 +325,7 @@ Src/tremolo_one.o: Src/tremolo_one.c \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h Inc/system_defs.h \
  Inc/tremolo_one.h
-Src/user_controls.o: Src/user_controls.c Inc/user_controls.h \
+Src/user_controls.o: Src/user_controls.c \
  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h \
  Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h \
@@ -353,8 +354,8 @@ Src/user_controls.o: Src/user_controls.c Inc/user_controls.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
- Inc/stm32f4xx_hal_conf.h \
- Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h Inc/user_controls.h \
+ Inc/stm32f4xx_hal_conf.h
 Src/wm8731.o: Src/wm8731.c Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  Inc/stm32f4xx_hal_conf.h Inc/mxconstants.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \

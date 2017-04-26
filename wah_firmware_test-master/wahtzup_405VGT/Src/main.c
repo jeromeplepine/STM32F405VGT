@@ -45,6 +45,7 @@
 #include "hardFaultHandler.h"
 #include "tremolo_one.h"
 #include "biquad.h"
+#include "user_controls.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -134,7 +135,8 @@ int main(void)
 
 
 
-  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11, GPIO_PIN_SET);
+  DebugLedON();
+  //HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_11);
 
   /* USER CODE END 2 */
 
@@ -144,6 +146,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+  	//HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_11);
+  	ButtonsLedAck();
+
     while(block_tick){};
     block_tick = 1;
     if(block_half){//use second half 
